@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>me.mattam.alfred2-movies-rb</string>
+	<key>connections</key>
+	<dict>
+		<key>DED327C6-D32C-4C7A-B294-76EC0247A526</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5733BB76-91FD-41AD-B402-2169C27AB643</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>mattam</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Film download search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open -a "/Applications/Google Chrome.app" "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5733BB76-91FD-41AD-B402-2169C27AB643</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>keyword</key>
+				<string>film</string>
+				<key>runningsubtext</key>
+				<string>Recherche des films</string>
+				<key>script</key>
+				<string>~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby film.rb "{query}"</string>
+				<key>title</key>
+				<string>film (Zone telechargement)</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DED327C6-D32C-4C7A-B294-76EC0247A526</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>5733BB76-91FD-41AD-B402-2169C27AB643</key>
+		<dict>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+		<key>DED327C6-D32C-4C7A-B294-76EC0247A526</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

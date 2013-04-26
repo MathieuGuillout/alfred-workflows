@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>me.mattam.alfred2-hn-rb</string>
+	<key>connections</key>
+	<dict>
+		<key>F27247A1-7823-4B16-B118-777D9BEF0CDD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A127E02F-18C6-49C1-898B-8F711F832D21</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>matttam</string>
+	<key>description</key>
+	<string>Open hacker news</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Hacker news</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open -a "/Applications/Google Chrome.app" "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>A127E02F-18C6-49C1-898B-8F711F832D21</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>hn</string>
+				<key>script</key>
+				<string>ruby hn.rb</string>
+				<key>subtext</key>
+				<string>Hacker news</string>
+				<key>title</key>
+				<string>Hacker news</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F27247A1-7823-4B16-B118-777D9BEF0CDD</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>A127E02F-18C6-49C1-898B-8F711F832D21</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>F27247A1-7823-4B16-B118-777D9BEF0CDD</key>
+		<dict>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

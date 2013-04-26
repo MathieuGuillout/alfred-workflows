@@ -1,0 +1,121 @@
+package configuration for libxslt is not found
+package configuration for libxml-2.0 is not found
+package configuration for libiconv is not found
+find_header: checking for libxml/parser.h... -------------------- yes
+
+"xcrun cc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -I-I-I/opt/local/include -I-I-I/usr/local/include -I-I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I-I/usr/include -I-I-I/usr/include/libxml2 -I/usr/local/opt/libxml2/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include/libxml2 -I-I/opt/local/include -I-I/usr/local/include -I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I/usr/include -I-I/usr/include/libxml2 -I/opt/local/include -I/usr/local/include -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I/usr/include -I/usr/include/libxml2  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE     -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    -g -DXP_UNIX  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <libxml/parser.h>
+/* end */
+
+--------------------
+
+find_header: checking for libxslt/xslt.h... -------------------- yes
+
+"xcrun cc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -I-I-I/opt/local/include -I-I-I/usr/local/include -I-I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I-I/usr/include -I-I-I/usr/include/libxml2 -I/usr/local/opt/libxml2/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include/libxml2 -I-I/opt/local/include -I-I/usr/local/include -I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I/usr/include -I-I/usr/include/libxml2 -I/opt/local/include -I/usr/local/include -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I/usr/include -I/usr/include/libxml2  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE     -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    -g -DXP_UNIX  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <libxslt/xslt.h>
+/* end */
+
+--------------------
+
+find_header: checking for libexslt/exslt.h... -------------------- yes
+
+"xcrun cc -E -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -I-I-I/opt/local/include -I-I-I/usr/local/include -I-I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I-I/usr/include -I-I-I/usr/include/libxml2 -I/usr/local/opt/libxml2/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include/libxml2 -I-I/opt/local/include -I-I/usr/local/include -I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I/usr/include -I-I/usr/include/libxml2 -I/opt/local/include -I/usr/local/include -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I/usr/include -I/usr/include/libxml2  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE     -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    -g -DXP_UNIX  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include <libexslt/exslt.h>
+/* end */
+
+--------------------
+
+have_func: checking for iconv_open() in iconv.h... -------------------- no
+
+"xcrun cc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -I-I-I/opt/local/include -I-I-I/usr/local/include -I-I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I-I/usr/include -I-I-I/usr/include/libxml2 -I/usr/local/opt/libxml2/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include/libxml2 -I-I/opt/local/include -I-I/usr/local/include -I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I/usr/include -I-I/usr/include/libxml2 -I/opt/local/include -I/usr/local/include -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I/usr/include -I/usr/include/libxml2  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    -g -DXP_UNIX conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/local/opt/libxml2/lib -L/opt/local/lib -L/usr/local/lib -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/lib -L. -arch i386 -arch x86_64      -lruby  -lpthread -ldl -lobjc   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+Undefined symbols for architecture i386:
+  "_iconv_open", referenced from:
+      _t in conftest-AGIWjK.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: #include <iconv.h>
+2: 
+3: /*top*/
+4: int main() { return 0; }
+5: int t() { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+/* end */
+
+"xcrun cc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -I-I-I/opt/local/include -I-I-I/usr/local/include -I-I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I-I/usr/include -I-I-I/usr/include/libxml2 -I/usr/local/opt/libxml2/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include/libxml2 -I-I/opt/local/include -I-I/usr/local/include -I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I/usr/include -I-I/usr/include/libxml2 -I/opt/local/include -I/usr/local/include -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I/usr/include -I/usr/include/libxml2  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    -g -DXP_UNIX conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/local/opt/libxml2/lib -L/opt/local/lib -L/usr/local/lib -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/lib -L. -arch i386 -arch x86_64      -lruby  -lpthread -ldl -lobjc   "
+conftest.c:5:22: error: too few arguments to function call, expected 2, have 0
+int t() { iconv_open(); return 0; }
+          ~~~~~~~~~~ ^
+/usr/include/iconv.h:65:1: note: 'iconv_open' declared here
+iconv_t iconv_open (const char* /*tocode*/, const char* /*fromcode*/);
+^
+1 error generated.
+checked program was:
+/* begin */
+1: #include <iconv.h>
+2: 
+3: /*top*/
+4: int main() { return 0; }
+5: int t() { iconv_open(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for iconv_open() in -liconv... -------------------- yes
+
+"xcrun cc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -I-I-I/opt/local/include -I-I-I/usr/local/include -I-I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I-I/usr/include -I-I-I/usr/include/libxml2 -I/usr/local/opt/libxml2/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include/libxml2 -I-I/opt/local/include -I-I/usr/local/include -I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I/usr/include -I-I/usr/include/libxml2 -I/opt/local/include -I/usr/local/include -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I/usr/include -I/usr/include/libxml2  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    -g -DXP_UNIX conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/local/opt/libxml2/lib -L/opt/local/lib -L/usr/local/lib -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/lib -L. -arch i386 -arch x86_64      -lruby -liconv  -lpthread -ldl -lobjc   "
+ld: warning: directory not found for option '-L/opt/local/lib'
+ld: warning: directory not found for option '-L/opt/local/lib'
+checked program was:
+/* begin */
+1: #include <iconv.h>
+2: 
+3: /*top*/
+4: int main() { return 0; }
+5: int t() { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for xmlParseDoc() in -lxml2... -------------------- no
+
+"xcrun cc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -I-I-I/opt/local/include -I-I-I/usr/local/include -I-I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I-I/usr/include -I-I-I/usr/include/libxml2 -I/usr/local/opt/libxml2/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include/libxml2 -I-I/opt/local/include -I-I/usr/local/include -I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I/usr/include -I-I/usr/include/libxml2 -I/opt/local/include -I/usr/local/include -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I/usr/include -I/usr/include/libxml2  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    -g -DXP_UNIX conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/local/opt/libxml2/lib -L/opt/local/lib -L/usr/local/lib -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/lib -L. -arch i386 -arch x86_64     -liconv  -lruby -lxml2 -liconv  -lpthread -ldl -lobjc   "
+conftest.c:3:53: error: use of undeclared identifier 'xmlParseDoc'
+int t() { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return 0; }
+                                                    ^
+1 error generated.
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return 0; }
+/* end */
+
+"xcrun cc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin12.0 -I. -I-I-I/opt/local/include -I-I-I/usr/local/include -I-I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I-I/usr/include -I-I-I/usr/include/libxml2 -I/usr/local/opt/libxml2/include/libxml2 -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include/libxml2 -I-I/opt/local/include -I-I/usr/local/include -I-I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I-I/usr/include -I-I/usr/include/libxml2 -I/opt/local/include -I/usr/local/include -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/include -I/usr/include -I/usr/include/libxml2  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -arch i386 -arch x86_64 -g -Os -pipe -fno-common -DENABLE_DTRACE  -fno-common  -pipe -fno-common    -g -DXP_UNIX conftest.c  -L. -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/local/opt/libxml2/lib -L/opt/local/lib -L/usr/local/lib -L/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib -L/usr/lib -L. -arch i386 -arch x86_64     -liconv  -lruby -lxml2 -liconv  -lpthread -ldl -lobjc   "
+conftest.c:3:11: warning: implicit declaration of function 'xmlParseDoc' is invalid in C99 [-Wimplicit-function-declaration]
+int t() { xmlParseDoc(); return 0; }
+          ^
+1 warning generated.
+ld: warning: directory not found for option '-L/opt/local/lib'
+ld: warning: ignoring file /usr/local/opt/libxml2/lib/libxml2.dylib, file was built for unsupported file format ( 0xcf 0xfa 0xed 0xfe 0x 7 0x 0 0x 0 0x 1 0x 3 0x 0 0x 0 0x 0 0x 6 0x 0 0x 0 0x 0 ) which is not the architecture being linked (i386): /usr/local/opt/libxml2/lib/libxml2.dylib
+Undefined symbols for architecture i386:
+  "_xmlParseDoc", referenced from:
+      _t in conftest-6JVnW0.o
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { xmlParseDoc(); return 0; }
+/* end */
+
+--------------------
+

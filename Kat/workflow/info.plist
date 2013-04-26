@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>me.mattam.alfred2-kat-rb</string>
+	<key>connections</key>
+	<dict>
+		<key>F1F532AE-CDFB-4CC8-B04C-F1731B0AB389</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>75AC6E10-E213-42EE-80AF-CAF173B35BE9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>mattam</string>
+	<key>description</key>
+	<string>kat.ph search</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>kat</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>keyword</key>
+				<string>kat</string>
+				<key>runningsubtext</key>
+				<string>searching...</string>
+				<key>script</key>
+				<string>~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby kat.rb "{query}"</string>
+				<key>subtext</key>
+				<string>query</string>
+				<key>title</key>
+				<string>kat</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F1F532AE-CDFB-4CC8-B04C-F1731B0AB389</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open -a "/Applications/Google Chrome.app" "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>75AC6E10-E213-42EE-80AF-CAF173B35BE9</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>75AC6E10-E213-42EE-80AF-CAF173B35BE9</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>F1F532AE-CDFB-4CC8-B04C-F1731B0AB389</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

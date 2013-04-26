@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>me.mattam.alfred2-chrome-rb</string>
+	<key>connections</key>
+	<dict>
+		<key>59658485-AA57-4E93-82CB-92BCE9D0999D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>41CF7807-33F4-47CE-99C0-DACD394B3B22</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>mattam</string>
+	<key>description</key>
+	<string>Open bookmark, history, ...</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Chrome</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>b</string>
+				<key>script</key>
+				<string>ruby chrome.rb "{query}"</string>
+				<key>subtext</key>
+				<string>Bookmark</string>
+				<key>title</key>
+				<string>Google Chrome</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>59658485-AA57-4E93-82CB-92BCE9D0999D</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>open -a "/Applications/Google Chrome.app" "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>41CF7807-33F4-47CE-99C0-DACD394B3B22</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>41CF7807-33F4-47CE-99C0-DACD394B3B22</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>59658485-AA57-4E93-82CB-92BCE9D0999D</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
