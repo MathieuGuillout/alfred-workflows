@@ -1,6 +1,7 @@
 Alfred workflows
 ================
 
+Those workflows are for Alfred 2.
 
 
 Hacker news
