@@ -1,4 +1,0 @@
-alfred-workflows
-================
-
-Alfred workflows
