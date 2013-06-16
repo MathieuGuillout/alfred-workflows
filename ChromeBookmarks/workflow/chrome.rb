@@ -8,6 +8,16 @@ require "bundle/bundler/setup"
 require "alfred"
 require "json"
 
+def distance a, b
+  query = /#{(a.downcase.split //).join(".*")}/
+
+  if (match = b.downcase.match(query)) then
+    100 / ((match.begin(0) + 1) * (match.end(0) - match.begin(0)))
+  else
+    0
+  end
+end
+
 def generate_feedback(alfred, query)
 
   feedback = alfred.feedback
@@ -17,16 +27,20 @@ def generate_feedback(alfred, query)
   bookmarks = JSON.parse(File.read(bookmarks_file))
   bookmarks = bookmarks["roots"]["bookmark_bar"]["children"]
 
-  found = bookmarks.select {|bookmark|
-    bookmark['name'].match /#{query}/i
+  found = bookmarks.map {|bookmark|
+    { :bookmark => bookmark, :d => distance(query, bookmark['name'])  }
+  }.select { |a| 
+    a[:d] > 0 
+  }.sort { |a, b| 
+    b[:d] <=> a[:d]
   }
   
   found.each do |elt|
     feedback.add_item({
-      :uid      => "Bookmark Default Search #{elt['id']}",
-      :title    => "#{elt['name']}",
-      :subtitle => "#{elt['url']}",
-      :arg      => elt["url"] 
+      :uid      => "Bookmark Default Search #{elt[:bookmark]['id']}",
+      :title    => "#{elt[:bookmark]['name']}",
+      :subtitle => "#{elt[:d]} - #{elt[:bookmark]['url']}",
+      :arg      => elt[:bookmark]["url"] 
     })
   end
 
